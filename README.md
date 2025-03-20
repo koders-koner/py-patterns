@@ -21,8 +21,7 @@ This repository contains a learning exercise with 15 pattern printing functions 
 11. Pascal's triangle (pattern_11)
 12. Hollow triangle (pattern_12)
 13. Hollow square (pattern_13)
-14. Hollow diamond (pattern_14)
-15. Number diamond (pattern_15)
+14. Number diamond (pattern_14)
 
 Each pattern includes a docstring showing the expected output for n=3 (or n=4 for pattern_15).
 
