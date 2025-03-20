@@ -141,7 +141,7 @@ def pattern_13(n):
     # TODO: Implement hollow square
     pass
 
-def pattern_15(n):
+def pattern_14(n):
     """Number diamond
     For n=4:
        1
