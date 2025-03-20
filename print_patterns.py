@@ -1,148 +1,170 @@
 def pattern_1(n):
-    """Simple star line
-    For n=3:
+    """Simple triangle
+    For n=4:
+    *
+    **
     ***
+    ****
     """
-    # TODO: Implement simple horizontal line of n stars
+    # TODO: Implement simple right triangle
     pass
 
 def pattern_2(n):
-    """Vertical star line
-    For n=3:
-    *
-    *
-    *
+    """Number line
+    For n=4:
+    1 2 3 4
     """
-    # TODO: Implement vertical line of n stars
+    # TODO: Implement single line of numbers
     pass
 
 def pattern_3(n):
     """Square of stars
-    For n=3:
-    ***
-    ***
-    ***
+    For n=4:
+    ****
+    ****
+    ****
+    ****
     """
-    # TODO: Implement n x n square of stars
+    # TODO: Implement n x n square
     pass
 
 def pattern_4(n):
-    """Right triangle
-    For n=3:
-    *
-    **
+    """Reverse triangle
+    For n=4:
+    ****
     ***
+    **
+    *
     """
-    # TODO: Implement right triangle with n rows
+    # TODO: Implement reverse right triangle
     pass
 
 def pattern_5(n):
-    """Reverse right triangle
-    For n=3:
-    ***
-    **
-    *
+    """Number column
+    For n=4:
+    1
+    2
+    3
+    4
     """
-    # TODO: Implement reverse right triangle with n rows
+    # TODO: Implement vertical numbers
     pass
 
 def pattern_6(n):
-    """Square border
-    For n=3:
-    ***
-    * *
-    ***
+    """Centered triangle
+    For n=4:
+       *
+      ***
+     *****
+    *******
     """
-    # TODO: Implement hollow square with n size
+    # TODO: Implement centered pyramid
     pass
 
 def pattern_7(n):
-    """Centered triangle
-    For n=3:
-      *
-     ***
-    *****
+    """Number pyramid
+    For n=4:
+       1
+      1 2
+     1 2 3
+    1 2 3 4
     """
-    # TODO: Implement centered triangle with n rows
+    # TODO: Implement number pyramid
     pass
 
 def pattern_8(n):
-    """Number line
-    For n=3:
-    1 2 3
+    """Reverse number pyramid
+    For n=4:
+    1 2 3 4
+     1 2 3
+      1 2
+       1
     """
-    # TODO: Implement horizontal line of numbers 1 to n
+    # TODO: Implement reverse number pyramid
     pass
 
 def pattern_9(n):
-    """Checkerboard
-    For n=3:
-    * * 
-     * *
-    * * 
+    """Diamond pattern
+    For n=4:
+       *
+      ***
+     *****
+    *******
+     *****
+      ***
+       *
     """
-    # TODO: Implement alternating checkerboard pattern
+    # TODO: Implement diamond shape
     pass
 
 def pattern_10(n):
-    """Diamond border
-    For n=3:
-      *
-     * *
-    *   *
-     * *
-      *
+    """Number square
+    For n=4:
+    1 2 3 4
+    1 2 3 4
+    1 2 3 4
+    1 2 3 4
     """
-    # TODO: Implement hollow diamond with n height for half
+    # TODO: Implement number square
     pass
 
 def pattern_11(n):
-    """Number triangle
-    For n=3:
-      1
-     1 2
-    1 2 3
+    """Pascal's triangle
+    For n=4:
+       1
+      1 1
+     1 2 1
+    1 3 3 1
     """
-    # TODO: Implement number triangle with n rows
+    # TODO: Implement Pascal's triangle
     pass
 
 def pattern_12(n):
-    """X pattern
-    For n=3:
-    *   *
-      *  
-    *   *
+    """Hollow triangle
+    For n=4:
+    *
+    **
+    * *
+    ****
     """
-    # TODO: Implement X pattern with n size
+    # TODO: Implement hollow right triangle
     pass
 
 def pattern_13(n):
-    """Staircase
-    For n=3:
-    ***
-     **
-      *
+    """Hollow square
+    For n=4:
+    ****
+    *  *
+    *  *
+    ****
     """
-    # TODO: Implement right-aligned staircase with n rows
+    # TODO: Implement hollow square
     pass
 
 def pattern_14(n):
-    """Wave pattern
-    For n=3:
-    * * *
-     * * *
-    * * *
+    """Hollow diamond
+    For n=4:
+       *
+      * *
+     *   *
+    *     *
+     *   *
+      * *
+       *
     """
-    # TODO: Implement wave pattern with n columns
+    # TODO: Implement hollow diamond
     pass
 
 def pattern_15(n):
-    """Frame pattern
+    """Number diamond
     For n=4:
-    +--+
-    |  |
-    |  |
-    +--+
+       1
+      2 2
+     3   3
+    4     4
+     3   3
+      2 2
+       1
     """
-    # TODO: Implement frame pattern with n size
+    # TODO: Implement number diamond
     pass
