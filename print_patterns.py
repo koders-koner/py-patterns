@@ -7,7 +7,10 @@ def pattern_1(n):
     ****
     """
     # TODO: Implement simple right triangle
-    pass
+    result = []
+    for i in range(1, n + 1):
+        result.append('*' * i)
+    return '\n'.join(result)
 
 def pattern_2(n):
     """Number line
@@ -15,7 +18,7 @@ def pattern_2(n):
     1 2 3 4
     """
     # TODO: Implement single line of numbers
-    pass
+    return ' '.join(str(i) for i in range(1, n + 1))
 
 def pattern_3(n):
     """Square of stars
@@ -26,7 +29,7 @@ def pattern_3(n):
     ****
     """
     # TODO: Implement n x n square
-    pass
+    return '\n'.join('*' * n for _ in range(n))
 
 def pattern_4(n):
     """Reverse triangle
@@ -37,7 +40,10 @@ def pattern_4(n):
     *
     """
     # TODO: Implement reverse right triangle
-    pass
+    result = []
+    for i in range(n, 0, -1):
+        result.append('*' * i)
+    return '\n'.join(result)
 
 def pattern_5(n):
     """Number column
@@ -48,7 +54,7 @@ def pattern_5(n):
     4
     """
     # TODO: Implement vertical numbers
-    pass
+    return '\n'.join(str(i) for i in range(1, n + 1))
 
 def pattern_6(n):
     """Centered triangle
@@ -59,7 +65,10 @@ def pattern_6(n):
     *******
     """
     # TODO: Implement centered pyramid
-    pass
+    result = []
+    for i in range(n):
+        result.append(' ' * (n - i - 1) + '*' * (2 * i + 1))
+    return '\n'.join(result)
 
 def pattern_7(n):
     """Number pyramid
@@ -70,7 +79,10 @@ def pattern_7(n):
     1 2 3 4
     """
     # TODO: Implement number pyramid
-    pass
+    result = []
+    for i in range(1, n + 1):
+        result.append(' ' * (n - i) + ' '.join(str(j) for j in range(1, i + 1)))
+    return '\n'.join(result)
 
 def pattern_8(n):
     """Reverse number pyramid
@@ -81,7 +93,10 @@ def pattern_8(n):
        1
     """
     # TODO: Implement reverse number pyramid
-    pass
+    result = []
+    for i in range(n, 0, -1):
+        result.append(' ' * (n - i) + ' '.join(str(j) for j in range(1, i + 1)))
+    return '\n'.join(result)
 
 def pattern_9(n):
     """Diamond pattern
@@ -95,7 +110,12 @@ def pattern_9(n):
        *
     """
     # TODO: Implement diamond shape
-    pass
+    result = []
+    for i in range(n):
+        result.append(' ' * (n - i - 1) + '*' * (2 * i + 1))
+    for i in range(n - 1):
+        result.append(' ' * (i + 1) + '*' * (2 * (n - i - 1) - 1))
+    return '\n'.join(result)
 
 def pattern_10(n):
     """Number square
@@ -106,7 +126,7 @@ def pattern_10(n):
     1 2 3 4
     """
     # TODO: Implement number square
-    pass
+    return '\n'.join(' '.join(str(i) for i in range(1, n + 1)) for i in range(n))
 
 def pattern_11(n):
     """Pascal's triangle
@@ -117,7 +137,17 @@ def pattern_11(n):
     1 3 3 1
     """
     # TODO: Implement Pascal's triangle
-    pass
+    result = []
+    prev_row = []
+    for i in range(n):
+        row = [1]
+        if i > 0:
+            for j in range(1, i):
+                row.append(prev_row[j - 1] + prev_row[j])
+            row.append(1)
+        result.append(' ' * (n - i - 1) + ' '.join(map(str, row)))
+        prev_row = row
+    return '\n'.join(result)
 
 def pattern_12(n):
     """Hollow triangle
@@ -128,7 +158,15 @@ def pattern_12(n):
     ****
     """
     # TODO: Implement hollow right triangle
-    pass
+    result = []
+    for i in range(n):
+        if i == n - 1:
+            result.append('*' * n)
+        elif i == 0:
+            result.append('*')
+        else:
+            result.append('*' + ' ' * (i - 1) + '*')
+    return '\n'.join(result)
 
 def pattern_13(n):
     """Hollow square
@@ -139,7 +177,13 @@ def pattern_13(n):
     ****
     """
     # TODO: Implement hollow square
-    pass
+    result = []
+    for i in range(n):
+        if i == 0 or i == n - 1:
+            result.append('*' * n)
+        else:
+            result.append('*' + ' ' * (n - 2) + '*')
+    return '\n'.join(result)
 
 def pattern_14(n):
     """Number diamond
@@ -153,4 +197,16 @@ def pattern_14(n):
        1
     """
     # TODO: Implement number diamond
-    pass
+    result = []
+    for i in range(1, n + 1):
+        if i == 1:
+            result.append(' ' * (n - i) + '1')
+        else:
+            result.append(' ' * (n - i) + str(i) + ' ' * (2 * (i - 1) - 1) + str(i))
+    for i in range(n - 1, 0, -1):
+        if i == 1:
+            result.append(' ' * (n - i) + '1')
+        else:
+            result.append(' ' * (n - i) + str(i) + ' ' * (2 * (i - 1) - 1) + str(i))
+
+    return '\n'.join(result)
